@@ -12,6 +12,7 @@
   width: 100%;
 
   &__button {
+    font-family: "Aria";
     padding-top: 50px;
     color: white;
     font-weight: 400;
@@ -20,6 +21,9 @@
     color: #ffffff;
     cursor: pointer;
     text-transform: capitalize;
+    width: 80px;
+    text-align: center;
+    border: 2px solid red;
 
     &:hover {
     }
