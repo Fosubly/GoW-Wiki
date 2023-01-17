@@ -1,10 +1,19 @@
 <header class="header">
   <nav class="navigation">
-    <a class="navigation__button">{{ "header.characters" | translate }}</a>
-    <a class="navigation__button">{{ "header.items" | translate }}</a>
-    <img src="/assets/svg/header/logo.svg" alt="" class="logo" />
-    <a class="navigation__button">{{ "header.enemies" | translate }}</a>
-    <a class="navigation__button">{{ "header.quests" | translate }}</a>
+    <ng-container *ngFor="let button of buttons; index as i">
+      <a [routerLink]="button.path" class="navigation__button">
+        <img src="/assets//svg/header/hover-effect.svg" class="button-hover" />
+        {{ button.translateKey | translate }}
+        <img src="/assets//svg/header/hover-effect.svg" class="button-hover" />
+      </a>
+
+      <img
+        *ngIf="i === 1"
+        src="/assets/svg/header/logo.svg"
+        alt="site-logo"
+        class="logo"
+      />
+    </ng-container>
   </nav>
   <app-language-switcher class="switcher"></app-language-switcher>
 </header>
