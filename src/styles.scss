@@ -1,8 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "/src/assets/styles/color-palette.scss";
+
+@font-face {
+  font-family: "GoWFont";
+  src: url("/assets/font/HeinrichRegular.ttf");
+  size-adjust: 120%;
+}
 
 @font-face {
   font-family: "GoWFont";
   src: url("/assets/font/GODOFWAR.TTF");
+  unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+}
+
+@font-face {
+  font-family: "GoWFont";
+  src: "Aria";
+  unicode-range: U+007C;
 }
 
 * {
@@ -10,4 +24,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "GoWFont";
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: 5px;
+  }
 }

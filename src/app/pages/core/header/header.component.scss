@@ -1,3 +1,5 @@
+@import "/src/assets/styles/color-palette.scss";
+
 .header {
   display: flex;
   width: 100vw;
@@ -20,7 +22,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #ffffff;
+    color: $basic;
     cursor: pointer;
     text-transform: capitalize;
     vertical-align: middle;
