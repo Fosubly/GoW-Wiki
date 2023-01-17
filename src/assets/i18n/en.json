@@ -1,0 +1,8 @@
+{
+  "header": {
+    "quests": "quests",
+    "items": "items",
+    "enemies": "enemies",
+    "characters": "characters"
+  }
+}
