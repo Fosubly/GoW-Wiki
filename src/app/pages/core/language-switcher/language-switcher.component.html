@@ -1,0 +1,15 @@
+<div class="switcher">
+  <span
+    class="lang"
+    [class.lang_active]="currentLang == 'ru'"
+    (click)="changeLanguage('ru')"
+    >ru</span
+  >
+  |
+  <span
+    class="lang"
+    [class.lang_active]="currentLang == 'en'"
+    (click)="changeLanguage('en')"
+    >en</span
+  >
+</div>
