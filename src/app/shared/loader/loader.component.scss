@@ -1,0 +1,54 @@
+.loader {
+  position: relative;
+  width: 100%;
+  min-width: 128px;
+  aspect-ratio: 0.75;
+  height: auto;
+
+  .loader__part {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    animation: spin 1s alternate-reverse infinite;
+  }
+
+  .part-1 {
+    top: 0;
+    right: 25%;
+  }
+  .part-2 {
+    top: 25%;
+    right: 0;
+
+    animation-delay: 0.33s;
+  }
+  .part-3 {
+    bottom: 0;
+    right: 25%;
+    animation-delay: 0.66s;
+  }
+  .part-4 {
+    left: 0;
+    bottom: 25%;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0.25;
+    animation-timing-function: ease-in;
+  }
+  33% {
+    opacity: 0.5;
+    animation-timing-function: ease-out;
+  }
+  66% {
+    opacity: 0.75;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+}

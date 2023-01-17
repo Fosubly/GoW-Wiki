@@ -2,8 +2,11 @@
   overflow: hidden;
 }
 
+$spinner-width: 5%;
+
 .background {
   width: 100%;
+  min-height: 100vh;
   position: relative;
 
   &__gray {
@@ -30,4 +33,22 @@
     background-size: 100% 100%;
     background-blend-mode: screen;
   }
+}
+
+.loader-wrapper {
+  background: #2b2b2b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+.loader {
+  position: absolute;
+  width: $spinner-width;
+  right: calc(50% - $spinner-width/2);
+  top: calc(50% - $spinner-width / 2 * 4 / 3);
+  z-index: 3;
 }
