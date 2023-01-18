@@ -1,4 +1,4 @@
-$spinner-width: 5%;
+$spinner-width: 10%;
 
 .header {
   position: fixed;
@@ -8,17 +8,19 @@ $spinner-width: 5%;
 .loader-wrapper {
   background: #2b2b2b;
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
+  top: 0;
 }
 
 .loader {
   position: absolute;
   width: $spinner-width;
-  right: calc(50% - $spinner-width/2);
-  top: calc(50% - $spinner-width / 2 * 4 / 3);
-  z-index: 3;
+  display: table;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

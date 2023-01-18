@@ -20,7 +20,7 @@ export class CoreComponent implements OnInit {
     window.onload = () => {
       this.isLoad = false;
       this.cdr.markForCheck();
-      console.log('loaded');
+      // console.log('loaded');
     };
   }
 }
