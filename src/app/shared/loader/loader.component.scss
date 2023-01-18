@@ -1,7 +1,7 @@
 .loader {
   position: relative;
   width: 100%;
-  min-width: 128px;
+  min-width: 32px;
   aspect-ratio: 0.75;
   height: auto;
 
@@ -35,14 +35,18 @@
 
 @keyframes spin {
   0% {
-    opacity: 0.25;
+    opacity: 0;
     animation-timing-function: ease-in;
   }
-  33% {
+  25% {
+    opacity: 0.25;
+    animation-timing-function: ease-out;
+  }
+  50% {
     opacity: 0.5;
     animation-timing-function: ease-out;
   }
-  66% {
+  75% {
     opacity: 0.75;
     animation-timing-function: ease-out;
   }

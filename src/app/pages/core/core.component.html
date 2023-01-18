@@ -1,4 +1,4 @@
-<div [ngStyle]="{ visability: isLoad }" class="core-wrapper">
+<div [ngStyle]="{ display: isLoad ? 'none' : 'block' }" class="core-wrapper">
   <app-header class="header"></app-header>
   <router-outlet></router-outlet>
 </div>
