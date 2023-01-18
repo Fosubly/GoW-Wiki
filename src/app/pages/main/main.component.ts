@@ -1,11 +1,4 @@
-import {
-  AfterContentInit,
-  ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  Component,
-  OnInit,
-} from '@angular/core';
-import { of, take, timeout, timer } from 'rxjs';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -13,19 +6,4 @@ import { of, take, timeout, timer } from 'rxjs';
   styleUrls: ['./main.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainComponent implements OnInit {
-  public isLoad = true;
-
-  public load() {
-    timer(2000)
-      .pipe(take(1))
-      .subscribe(() => {
-        this.isLoad = false;
-        this.cdr.markForCheck();
-      });
-  }
-
-  constructor(private cdr: ChangeDetectorRef) {}
-
-  ngOnInit(): void {}
-}
+export class MainComponent {}
