@@ -1,7 +1,8 @@
 $spinner-width: 3%;
 
 .core-wrapper {
-  display: none;
+  opacity: 1;
+  transition: 0.1s ease-in;
 }
 
 .header {
